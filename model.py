@@ -37,7 +37,8 @@ class Movie(db.Model):
     # ratings = a list of Rating objects
 
     def __repr__(self):
-        return f'<Movie title = {self.title} \nmovie_id={self.movie_id}>'
+        return f"""<Movie title = {self.title}
+        movie_id={self.movie_id}>"""
 
 class Rating(db.Model):
     """A rating."""
